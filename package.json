@@ -1,0 +1,32 @@
+{
+  "name": "markdown-preview",
+  "version": "1.0.0",
+  "description": "markdown预览、微信文章编辑",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostcode/markdown-preview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghostcode/markdown-preview/issues"
+  },
+  "homepage": "https://github.com/ghostcode/markdown-preview#readme",
+  "devDependencies": {
+    "clipboard": "^1.6.1",
+    "css-loader": "^0.28.0",
+    "eslint": "^3.19.0",
+    "highlight.js": "^9.10.0",
+    "showdown": "^1.6.4",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "marked": "^0.3.6"
+  }
+}
