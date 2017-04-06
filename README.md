@@ -13,6 +13,6 @@ Thanks:
 Todo
 --
 
-- [x] add basic preview
-- [ ] normal **formatting**, @mentions, #1234 refs
-- [x] completed
+- [x] add basic preview feature
+- [ ] add theme change feature
+- [ ] add local cache feature
