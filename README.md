@@ -14,5 +14,6 @@ Todo
 --
 
 - [x] add basic preview feature
+- [x] add basic copy feature
 - [ ] add theme change feature
 - [ ] add local cache feature

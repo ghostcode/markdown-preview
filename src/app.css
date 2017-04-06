@@ -68,21 +68,36 @@ pre.prettyprint{
 pre.prettyprint.linenums{
     padding:8px 0 6px;
     border:1px solid #a96a41;
+    overflow: auto;
     /*background-color: #305448;*/
 }
 
+/*page style*/
+.title{
+    text-align: center;
+}
+
 .wrap{
-    height:100%;
+
+}
+.clear{
+    padding:20px;
     overflow: auto;
+}
+.markdown,
+.preview{
+    min-height: 500px;
 }
 .markdown{
     float:left;
-    width:50%; 
-    height:100%;   
+    width:45%;
+    border:1px solid #999;
 }
 .preview{
-    float:left;
-    width:50%;
+    float:right;
+    width:45%;
+    padding:10px;
+    border:1px solid #999;
 }
 
 .actions{
@@ -90,3 +105,5 @@ pre.prettyprint.linenums{
     top:0;
     right:0;
 }
+
+
