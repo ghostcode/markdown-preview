@@ -1,75 +1,119 @@
-/* Tomorrow Night Blue Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+.prettyprint {
+  background: #002451;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 0 !important;
+}
 
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
+.pln {
+  color: #ffffff;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #7285b7;
 }
 
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-  color: #ff9da4;
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  padding-left: 1em;
+  background-color: #002451;
+  list-style-type: decimal;
 }
 
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-  color: #ffc58f;
-}
+@media screen {
 
-/* Tomorrow Yellow */
-.hljs-attribute {
-  color: #ffeead;
-}
+  /* string content */
 
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-  color: #d1f1a9;
-}
+  .str {
+    color: #d1f1a9;
+  }
 
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-  color: #bbdaff;
-}
+  /* keyword */
 
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #ebbbff;
-}
+  .kwd {
+    color: #ebbbff;
+  }
 
-.hljs {
-  display: block;
-  overflow-x: auto;
-  background: #002451;
-  color: white;
-  padding: 0.5em;
-}
+  /* comment */
 
-.hljs-emphasis {
-  font-style: italic;
-}
+  .com {
+    color: #7285b7;
+  }
 
-.hljs-strong {
-  font-weight: bold;
+  /* type name */
+
+  .typ {
+    color: #bbdaff;
+  }
+
+  /* literal value */
+
+  .lit {
+    color: #ffc58f;
+  }
+
+  /* punctuation */
+
+  .pun {
+    color: #ffffff;
+  }
+
+  /* lisp open bracket */
+
+  .opn {
+    color: #ffffff;
+  }
+
+  /* lisp close bracket */
+
+  .clo {
+    color: #ffffff;
+  }
+
+  /* markup tag name */
+
+  .tag {
+    color: #ff9da4;
+  }
+
+  /* markup attribute name */
+
+  .atn {
+    color: #ffc58f;
+  }
+
+  /* markup attribute value */
+
+  .atv {
+    color: #99ffff;
+  }
+
+  /* declaration */
+
+  .dec {
+    color: #ffc58f;
+  }
+
+  /* variable name */
+
+  .var {
+    color: #ff9da4;
+  }
+
+  /* function name */
+
+  .fun {
+    color: #bbdaff;
+  }
 }

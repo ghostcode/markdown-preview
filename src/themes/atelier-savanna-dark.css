@@ -1,84 +1,119 @@
-/* Base16 Atelier Savanna Dark - Theme */
-/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/savanna) */
-/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
-
-/* Atelier-Savanna Comment */
-.hljs-comment,
-.hljs-quote {
-  color: #78877d;
-}
-
-/* Atelier-Savanna Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-attribute,
-.hljs-tag,
-.hljs-name,
-.hljs-regexp,
-.hljs-link,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class {
-  color: #b16139;
-}
-
-/* Atelier-Savanna Orange */
-.hljs-number,
-.hljs-meta,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params {
-  color: #9f713c;
-}
-
-/* Atelier-Savanna Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet {
-  color: #489963;
-}
-
-/* Atelier-Savanna Blue */
-.hljs-title,
-.hljs-section {
-  color: #478c90;
-}
-
-/* Atelier-Savanna Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-  color: #55859b;
-}
-
-.hljs-deletion,
-.hljs-addition {
-  color: #171c19;
-  display: inline-block;
-  width: 100%;
-}
-
-.hljs-deletion {
-  background-color: #b16139;
-}
-
-.hljs-addition {
-  background-color: #489963;
-}
-
-.hljs {
-  display: block;
-  overflow-x: auto;
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+.prettyprint {
   background: #171c19;
-  color: #87928a;
-  padding: 0.5em;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 0 !important;
 }
 
-.hljs-emphasis {
-  font-style: italic;
+.pln {
+  color: #ecf4ee;
 }
 
-.hljs-strong {
-  font-weight: bold;
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #5f6d64;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  padding-left: 1em;
+  background-color: #171c19;
+  list-style-type: decimal;
+}
+
+@media screen {
+
+  /* string content */
+
+  .str {
+    color: #489963;
+  }
+
+  /* keyword */
+
+  .kwd {
+    color: #55859b;
+  }
+
+  /* comment */
+
+  .com {
+    color: #5f6d64;
+  }
+
+  /* type name */
+
+  .typ {
+    color: #478c90;
+  }
+
+  /* literal value */
+
+  .lit {
+    color: #9f713c;
+  }
+
+  /* punctuation */
+
+  .pun {
+    color: #ecf4ee;
+  }
+
+  /* lisp open bracket */
+
+  .opn {
+    color: #ecf4ee;
+  }
+
+  /* lisp close bracket */
+
+  .clo {
+    color: #ecf4ee;
+  }
+
+  /* markup tag name */
+
+  .tag {
+    color: #b16139;
+  }
+
+  /* markup attribute name */
+
+  .atn {
+    color: #9f713c;
+  }
+
+  /* markup attribute value */
+
+  .atv {
+    color: #1c9aa0;
+  }
+
+  /* declaration */
+
+  .dec {
+    color: #9f713c;
+  }
+
+  /* variable name */
+
+  .var {
+    color: #b16139;
+  }
+
+  /* function name */
+
+  .fun {
+    color: #478c90;
+  }
 }

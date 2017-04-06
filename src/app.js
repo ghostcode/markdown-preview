@@ -1,10 +1,11 @@
 import './app.css';
-import Marked,{Renderer} from "marked";
-import HighLight from 'highlight.js';
 import Clipboard from 'clipboard';
+import showdown from 'showdown';
 
-// import showdown from 'showdown';
-
+require("./showdown-plugins/showdown-prettify-for-wechat.js");
+require("./showdown-plugins/showdown-github-task-list.js");
+require("./showdown-plugins/showdown-footnote.js");
+require("./google-code-prettify/run_prettify.js");
 
 let MarkDown = {
     init(){
@@ -23,30 +24,13 @@ let MarkDown = {
     preview(){
         let self = this;
         let markedownVal = self.getE('.j-markdown').value;
-
-        // Create your custom renderer.
-        const renderer = new Renderer();
-
-        renderer.code = (code, language) => {
-            language = language ? language : 'js'
-            let highlighted = HighLight.highlight(language,code).value;
-
-            // console.log(highlighted)
-            
-            let highlighted1 = highlighted.replace(/\n/g,function(match){
-                console.log(match)
-                return match + '<br/>';
-            })
-
-            return `<pre><code class="hljs">${highlighted1}</code></pre>`
-        };
-
-        Marked.setOptions({
-            langPrefix:'hljs ',
-            renderer
+        let converter =  new showdown.Converter({
+            extensions: ['prettify', 'tasklist', 'footnote'],
+            tables: true
         });
-
-        self.getE('.js-preview').innerHTML = Marked(markedownVal);
+        
+        self.getE('.js-preview').innerHTML = converter.makeHtml(markedownVal);
+        PR.prettyPrint();
     },
     copy(){
         new Clipboard('.j-action-copy');

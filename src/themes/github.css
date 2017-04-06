@@ -1,99 +1,119 @@
-/*
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+.prettyprint {
+  background: #fff;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 0 !important;
+}
 
-github.com style (c) Vasily Polovnyov <vast@whiteants.net>
-
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
+.pln {
   color: #333;
-  background: #f8f8f8;
 }
 
-.hljs-comment,
-.hljs-quote {
-  color: #998;
-  font-style: italic;
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #cccccc;
 }
 
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-subst {
-  color: #333;
-  font-weight: bold;
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  padding-left: 1em;
+  background-color: #fff;
+  list-style-type: decimal;
 }
 
-.hljs-number,
-.hljs-literal,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag .hljs-attr {
-  color: #008080;
-}
+@media screen {
 
-.hljs-string,
-.hljs-doctag {
-  color: #d14;
-}
+  /* string content */
 
-.hljs-title,
-.hljs-section,
-.hljs-selector-id {
-  color: #900;
-  font-weight: bold;
-}
+  .str {
+    color: #d14;
+  }
 
-.hljs-subst {
-  font-weight: normal;
-}
+  /* keyword */
 
-.hljs-type,
-.hljs-class .hljs-title {
-  color: #458;
-  font-weight: bold;
-}
+  .kwd {
+    color: #333;
+  }
 
-.hljs-tag,
-.hljs-name,
-.hljs-attribute {
-  color: #000080;
-  font-weight: normal;
-}
+  /* comment */
 
-.hljs-regexp,
-.hljs-link {
-  color: #009926;
-}
+  .com {
+    color: #998;
+  }
 
-.hljs-symbol,
-.hljs-bullet {
-  color: #990073;
-}
+  /* type name */
 
-.hljs-built_in,
-.hljs-builtin-name {
-  color: #0086b3;
-}
+  .typ {
+    color: #458;
+  }
 
-.hljs-meta {
-  color: #999;
-  font-weight: bold;
-}
+  /* literal value */
 
-.hljs-deletion {
-  background: #fdd;
-}
+  .lit {
+    color: #458;
+  }
 
-.hljs-addition {
-  background: #dfd;
-}
+  /* punctuation */
 
-.hljs-emphasis {
-  font-style: italic;
-}
+  .pun {
+    color: #333;
+  }
 
-.hljs-strong {
-  font-weight: bold;
+  /* lisp open bracket */
+
+  .opn {
+    color: #333;
+  }
+
+  /* lisp close bracket */
+
+  .clo {
+    color: #333;
+  }
+
+  /* markup tag name */
+
+  .tag {
+    color: #000080;
+  }
+
+  /* markup attribute name */
+
+  .atn {
+    color: #008080;
+  }
+
+  /* markup attribute value */
+
+  .atv {
+    color: #d14;
+  }
+
+  /* declaration */
+
+  .dec {
+    color: #333;
+  }
+
+  /* variable name */
+
+  .var {
+    color: #008080;
+  }
+
+  /* function name */
+
+  .fun {
+    color: #900;
+  }
 }
